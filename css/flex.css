@@ -1,0 +1,38 @@
+main {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.mainWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex-grow: 1;
+  padding-bottom: 20px;
+}
+
+.header,
+.navigation,
+.content,
+.sidebar,
+.footer {
+  display: flex;
+  border: 3px solid #414141;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+.contentWrapper {
+  display: flex;
+  gap: 10px;
+  flex-grow: 1;
+}
+
+.content{
+    width: 70%;
+}
+
+.sidebar{
+    width: 30%;
+}
