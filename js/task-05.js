@@ -1,10 +1,10 @@
 const objectToArray = (obj) => {
   const newArr = [];
   const keys = Object.keys(obj);
-
   for (const key of keys) {
-    if (typeof obj.key === "object") {
-      newArr.push([key, objectToArray(obj.key)]);
+    if (typeof obj[key] === "object") {
+      const nextArr = objectToArray(obj[key]);
+      newArr.push([key, nextArr]);
     } else {
       newArr.push([key, obj[key]]);
     }
@@ -19,12 +19,6 @@ const result = objectToArray({
     html: 4,
     css: 5,
     js: 5,
-    test: {
-      a: 5,
-      b: 6,
-    },
   },
 });
 console.log(result);
-
-// Outputs: [['name', 'developer'], ['age', 5], ['skills', [['html', 4], ['css', 5], ['js', 5]]]
