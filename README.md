@@ -1,4 +1,4 @@
-# Test-task for D
+# Test-task for DevIt
 
 This is a repository is test-task on trainy position in DevIt. Also for demonstration my capabilities in GIT,HTML,CSS and TS.
 ***
