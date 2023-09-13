@@ -1,4 +1,8 @@
-function deepEqual(objA, objB) {
+type MyObject = {
+  [key: string]: any;
+};
+
+function deepEqual(objA: MyObject, objB: MyObject):boolean {
   // Сначала проверяем на равенство по ссылке (для оптимизации)
   if (objA === objB) {
     return true;
@@ -9,7 +13,7 @@ function deepEqual(objA, objB) {
     typeof objA !== "object" ||
     typeof objB !== "object" ||
     objA === null ||
-    objB === null 
+    objB === null
   ) {
     return false;
   }

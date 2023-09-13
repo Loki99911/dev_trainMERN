@@ -10,11 +10,41 @@
     href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
   />
     <link rel="stylesheet" href="css/common.css" />
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        margin: 0;
+      }
+
+      ul {
+        text-align: left;
+      }
+
+      h2,li {
+        text-align: center;
+      }
+    </style>
   </head>
   <body>
-    <ul>
+    <ul >
       <h2>=== GIT ===</h2>
-      <li><a href="GIT.html">GIT Answer</a></li>
+      <pre>
+        Что б добавить рабочий код на репозиторий клиента
+        надо сделать несколько операций в консоли:
+        1)cd /путь/к/папке/для/проекта
+        2)git clone git@example.com:example/test.git
+        3)Имя деректории предположим - "test".
+          cd test
+        4)git init
+        5)git remote add client git@example.com:example/test.git
+        6)git add .
+        7)git commit -m "Ваше сообщение о коммите здесь"
+        8)git push client master
+        Или проделать подобные операции в GitHub Desktop:)
+      </pre>
       <h2>=== CSS, HTML ===</h2>
       <li><a href="FLEX-Layout.html">FLEX layout</a></li>
       <li><a href="GRID-Layout.html">GRID layout</a></li>
